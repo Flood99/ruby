@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638007444760000000
-    m_Hash: 2744126173
+      ticks: 638016930370000000
+    m_Hash: 1234013860
   m_LockFileStatus:
     m_FilePath: /Users/game1-21/ruby/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638007444840000000
-    m_Hash: 1125994793
+      ticks: 638016930370000000
+    m_Hash: 1051279542
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -143,6 +143,7 @@ m_ResolvedPackages:
     - 8.0.1
     - 8.0.2
     - 8.0.3
+    - 8.0.4
     - 9.0.0-pre.1
     - 9.0.0-pre.3
     - 9.0.0
@@ -376,6 +377,7 @@ m_ResolvedPackages:
     - 7.0.0
     - 7.0.1
     - 7.0.2
+    - 7.0.3
     - 8.0.0-pre.1
     - 8.0.0-pre.3
     - 8.0.0
@@ -781,6 +783,7 @@ m_ResolvedPackages:
     - 1.17.0
     - 1.17.1
     - 1.17.2
+    - 1.17.6
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -826,6 +829,7 @@ m_ResolvedPackages:
     - 1.17.0
     - 1.17.1
     - 1.17.2
+    - 1.17.6
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -939,6 +943,7 @@ m_ResolvedPackages:
     - 3.0.13
     - 3.0.14
     - 3.0.15
+    - 3.0.16
     compatible:
     - 3.0.6
     - 3.0.7
@@ -948,7 +953,8 @@ m_ResolvedPackages:
     - 3.0.13
     - 3.0.14
     - 3.0.15
-    verified: 3.0.15
+    - 3.0.16
+    verified: 3.0.16
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -979,12 +985,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 3.0.6
     nextVersion: 
-- packageId: com.unity.ide.visualstudio@2.0.12
+- packageId: com.unity.ide.visualstudio@2.0.16
   testable: 0
   isDirectDependency: 1
-  version: 2.0.12
+  version: 2.0.16
   source: 1
-  resolvedPath: /Users/game1-21/ruby/Library/PackageCache/com.unity.ide.visualstudio@2.0.12
+  resolvedPath: /Users/game1-21/ruby/Library/PackageCache/com.unity.ide.visualstudio@2.0.16
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -1055,23 +1061,23 @@ m_ResolvedPackages:
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637720564750000000
+  datePublishedTicks: 637914298680000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-    revision: 8d436ff053b9c59677b5e9799208143553cd02d9
+    revision: c01855ef6461b821ab0226135e96a4ee86de96be
     path: 
   unityLifecycle:
     version: 2.0.7
     nextVersion: 
-- packageId: com.unity.ide.vscode@1.2.4
+- packageId: com.unity.ide.vscode@1.2.5
   testable: 0
   isDirectDependency: 1
-  version: 1.2.4
+  version: 1.2.5
   source: 1
-  resolvedPath: /Users/game1-21/ruby/Library/PackageCache/com.unity.ide.vscode@1.2.4
+  resolvedPath: /Users/game1-21/ruby/Library/PackageCache/com.unity.ide.vscode@1.2.5
   assetPath: Packages/com.unity.ide.vscode
   name: com.unity.ide.vscode
   displayName: Visual Studio Code Editor
@@ -1121,13 +1127,13 @@ m_ResolvedPackages:
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637660806170000000
+  datePublishedTicks: 637800255360000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
-    url: git+https://github.com/Unity-Technologies/com.unity.ide.vscode.git
-    revision: 1f4f605d5c988cb610c372b5c5216c46cc8f5d30
+    url: https://github.com/Unity-Technologies/com.unity.ide.vscode.git
+    revision: b0740c80bfc2440527c317109f7c3d9100132722
     path: 
   unityLifecycle:
     version: 1.2.3
@@ -1186,6 +1192,7 @@ m_ResolvedPackages:
     - 1.1.30
     - 1.1.31
     - 1.1.33
+    - 1.3.0
     - 2.0.1-exp.1
     - 2.0.1-pre.12
     - 2.0.1-pre.18
@@ -1197,6 +1204,7 @@ m_ResolvedPackages:
     - 1.1.30
     - 1.1.31
     - 1.1.33
+    - 1.3.0
     - 2.0.1-exp.1
     - 2.0.1-pre.12
     - 2.0.1-pre.18
@@ -3663,7 +3671,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: library
+  type: 
   description: 'Newtonsoft Json for use in Unity projects and Unity packages. Currently
     synced to version 12.0.2.
 
@@ -3678,10 +3686,26 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
+    - 1.0.0-preview.2
+    - 1.0.0-preview.3
+    - 1.0.0-preview.4
+    - 1.0.1-preview.1
+    - 1.1.2
+    - 2.0.0-preview
+    - 2.0.0-preview.1
+    - 2.0.0-preview.2
     - 2.0.0
+    - 2.0.1-preview.1
+    - 2.0.2
+    - 3.0.1
+    - 3.0.2
     compatible:
     - 2.0.0
-    verified: 2.0.0
+    - 2.0.1-preview.1
+    - 2.0.2
+    - 3.0.1
+    - 3.0.2
+    verified: 2.0.2
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -3697,7 +3721,7 @@ m_ResolvedPackages:
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 637237898320000000
   documentationUrl: 
   hasRepository: 1
   repository:
@@ -3924,6 +3948,7 @@ m_ResolvedPackages:
     - 7.0.0-pre.4
     - 7.0.0
     - 7.0.1
+    - 7.0.2
     - 8.0.0-pre.1
     - 8.0.0-pre.2
     - 8.0.0
