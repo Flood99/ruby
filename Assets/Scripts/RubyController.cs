@@ -9,6 +9,12 @@ public class RubyController : MonoBehaviour
     public int maxHealth = 5;
     int currentHealth;
     public int health{get{return currentHealth;}}
+
+    bool isInvincible;
+    float invincibleTimer;
+    float timeInvincible = 2.0f;
+
+
     Rigidbody2D rigidbody2d;
     float horizontal; 
     float vertical;
@@ -17,7 +23,7 @@ public class RubyController : MonoBehaviour
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
-        currentHealth = 1;
+        currentHealth = maxHealth;
         
     }
 
@@ -26,6 +32,16 @@ public class RubyController : MonoBehaviour
     {
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
+        if(isInvincible)
+        {
+            invincibleTimer-=Time.deltaTime*1;
+            if(invincibleTimer < 0);{
+                isInvincible = false;
+            }
+            
+
+        }
+       
     }
 
     void FixedUpdate()
@@ -35,14 +51,22 @@ public class RubyController : MonoBehaviour
         position.y = position.y + speed * vertical * Time.deltaTime;
 
         rigidbody2d.MovePosition(position);
+        
     }
 
     public void ChangeHealth(int amount)
     {
+        if(amount<0)
+        {
+            if(isInvincible){
+             return;
+            }
+             isInvincible = true;
+             invincibleTimer = timeInvincible;
+            Debug.Log("Iframes: " + isInvincible);
+        }
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         Debug.Log(currentHealth + "/" + maxHealth);
-
-
     }
 
 
