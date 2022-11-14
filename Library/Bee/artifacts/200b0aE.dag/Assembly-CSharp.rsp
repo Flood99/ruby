@@ -341,6 +341,7 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/Scripts/DamageZone.cs"
+"Assets/Scripts/EnemyController.cs"
 "Assets/Scripts/HealthCollectible.cs"
 "Assets/Scripts/RubyController.cs"
 -langversion:8.0

@@ -5,14 +5,16 @@ using UnityEngine;
 public class RubyController : MonoBehaviour
 {
     public float speed = 3.0f;
-    
+
+     public float timeInvincible = 2.0f;
+
     public int maxHealth = 5;
     int currentHealth;
     public int health{get{return currentHealth;}}
 
     bool isInvincible;
     float invincibleTimer;
-    float timeInvincible = 2.0f;
+    
 
 
     Rigidbody2D rigidbody2d;
@@ -24,6 +26,8 @@ public class RubyController : MonoBehaviour
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
+        invincibleTimer = 0;
+        isInvincible = false;
         
     }
 
@@ -32,14 +36,11 @@ public class RubyController : MonoBehaviour
     {
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
-        if(isInvincible)
+        if (isInvincible)
         {
-            invincibleTimer-=Time.deltaTime*1;
-            if(invincibleTimer < 0);{
+            invincibleTimer -= Time.deltaTime;
+            if (invincibleTimer < 0)
                 isInvincible = false;
-            }
-            
-
         }
        
     }
@@ -56,15 +57,15 @@ public class RubyController : MonoBehaviour
 
     public void ChangeHealth(int amount)
     {
-        if(amount<0)
+        if (amount < 0)
         {
-            if(isInvincible){
-             return;
-            }
-             isInvincible = true;
-             invincibleTimer = timeInvincible;
-            Debug.Log("Iframes: " + isInvincible);
+            if (isInvincible)
+                return;
+            
+            isInvincible = true;
+            invincibleTimer = timeInvincible;
         }
+        
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         Debug.Log(currentHealth + "/" + maxHealth);
     }
