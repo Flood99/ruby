@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 4090782647812290882}
   - component: {fileID: 7788958653773932827}
   - component: {fileID: 4479995998461664444}
-  m_Layer: 0
+  - component: {fileID: 8855949481682052059}
+  m_Layer: 8
   m_Name: Ruby
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,3 +148,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   maxHealth: 0
+  timeInvincible: 2
+  projectilePrefab: {fileID: 574026465232668236, guid: d0ba44f4720bc4348a9ff1d23c1f697e, type: 3}
+--- !u!95 &8855949481682052059
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3916253521887798078}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b77822e0485373d40b5beb92e9a5e728, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
