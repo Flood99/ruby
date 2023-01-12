@@ -280,6 +280,9 @@
     <Reference Include="Antlr3.Runtime">
         <HintPath>/Users/game1-21/ruby/Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Flow/Dependencies/NCalc/Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="clipper_library">
+        <HintPath>/Users/game1-21/ruby/Library/PackageCache/com.unity.cinemachine@2.7.9/Runtime/ThirdParty/clipper_library.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>/Users/game1-21/ruby/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -708,6 +711,12 @@
     </Reference>
     <Reference Include="Unity.2D.IK.Runtime">
         <HintPath>/Users/game1-21/ruby/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+        <HintPath>/Users/game1-21/ruby/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+        <HintPath>/Users/game1-21/ruby/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
         <HintPath>/Users/game1-21/ruby/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
