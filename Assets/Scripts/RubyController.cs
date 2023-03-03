@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RubyController : MonoBehaviour
 {
+    public AudioClip shoot;
     public float speed = 3.0f;
     
     public int maxHealth = 5;
@@ -21,6 +22,7 @@ public class RubyController : MonoBehaviour
     Rigidbody2D rigidbody2d;
     public GameObject projectilePrefab;
     Animator animator;
+    AudioSource audioSource;
     Vector2 lookDirection = new Vector2(1,0);
     
     // Start is called before the first frame update
@@ -28,7 +30,7 @@ public class RubyController : MonoBehaviour
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        
+        audioSource = GetComponent<AudioSource>();
         currentHealth = maxHealth;
     }
 
@@ -113,6 +115,11 @@ public class RubyController : MonoBehaviour
         projectile.Launch(lookDirection, 300);
 
         animator.SetTrigger("Launch");
+        audioSource.PlayOneShot(shoot);
+    }
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
 }
 
